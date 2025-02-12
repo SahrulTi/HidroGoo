@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Account - Admin Dashboard</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="icon" href="assets/imgs/logo2.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    
+    
+    
+  </head>
+  <body>
+    <div class="container">
+      <div class="navigation">
+        <ul>
+          <li>
+            <a href="home.html">
+              <span class="title hidrogoo-title">HIDROGOO</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="home.html">
+              <span class="icon">
+                <ion-icon name="home-outline"></ion-icon>
+              </span>
+              <span class="title">Home</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="training.html">
+              <span class="icon">
+                <ion-icon name="school-outline"></ion-icon>
+              </span>
+              <span class="title">Training</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="shop.html">
+              <span class="icon">
+                <ion-icon name="cart-outline"></ion-icon>
+              </span>
+              <span class="title">Shop</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="account.html">
+              <span class="icon">
+                <ion-icon name="person-outline"></ion-icon>
+              </span>
+              <span class="title">Account</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="main">
+        <div class="topbar">
+          <div class="toggle">
+            <ion-icon name="menu-outline"></ion-icon>
+          </div>
+
+          <!-- <div class="user">
+            <img src="assets/imgs/customer01.jpg" alt="user-dropdown" />
+            <div class="user-dropdown">
+              <a href="#">Profile</a>
+              <a href="#">Settings</a>
+              <a href="login.html">Logout</a>
+            </div>
+          </div> -->
+        </div>
+
+        <div class="background-card">
+          <div class="account-form-container">
+            <h2>Account Information</h2>
+            <form action="submit_account.html" method="post" class="account-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="first-name">Nama Depan</label>
+                  <input type="text" id="first-name" name="first-name" required />
+                </div>
+                <div class="form-group">
+                  <label for="last-name">Nama Belakang</label>
+                  <input type="text" id="last-name" name="last-name" required />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="form-group">
+                <label for="address">Alamat</label>
+                <input type="text" id="address" name="address" required />
+              </div>
+              <div class="form-group">
+                <label for="phone">No Handphone</label>
+                <input type="tel" id="phone" name="phone" required />
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="city">Kota</label>
+                  <input type="text "id="city" name="city" required>
+                </div>
+                <div class="form-group">
+                  <label for="province">Provinsi</label>
+                  <input type="text" id="province" name="province" required>
+                    
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required />
+              </div>
+              <div class="button-group">
+                <button type="submit" class="btn btn-primary">
+                    <i class="fas fa-pencil-alt"></i> Save Changes
+                </button>
+                <button type="button" class="btn btn-danger" onclick="logout()">
+                    <i class="fas fa-sign-out-alt"></i> Logout 
+                </button>
+            </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      function logout() {
+        window.location.href = 'login.php';
+      }
+    </script>
+  </body>
+</html>
